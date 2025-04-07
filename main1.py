@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error,r2_score
 
 
-df=pd.read_csv("D:\datascience\Dataset .csv")
+df=pd.read_csv("Dataset .csv")
 df.info()
 
 #To read number of columns and rows
