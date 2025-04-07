@@ -43,7 +43,7 @@ plt.ylabel('Count')
 plt.show()
 imbalance_ratio=class_counts.max()
 print("Imbalance Ratio:",imbalance_ratio)
-"""
+
 #Identify numerical coolumns
 data_types=df.dtypes
 num_columns=data_types[data_types!='object'].index.tolist()
@@ -276,7 +276,7 @@ plt.xlabel('Has Online Delivery')
 plt.ylabel('Rating')
 plt.show()
 
-"""
+
 
 #compare average ratings of restaurants with & without table booking
 # Converting 'Yes'/'No' to boolean values 
