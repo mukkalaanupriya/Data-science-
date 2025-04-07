@@ -306,42 +306,4 @@ print("DataFrame with Additional Features:")
 print(df)
 
 
-"""
-# Count number of times each price range occurs
-price_range_counts = df['Price range'].value_counts()
-print("Price Range Counts:")
-print(price_range_counts)
-most_common_price_range = price_range_counts.idxmax()
-print("\nMost Common Price Range:", most_common_price_range)
 
-
-#Average rating for each price range
-average_ratings = df.groupby('Price range')['Aggregate rating'].mean()
-print("Average Ratings for Each Price Range:")
-print(average_ratings)
-
-
-
-# Identify the price range with the highest average rating
-highest_avg_rating_price_range = average_ratings.idxmax()
-print("\nPrice Range with Highest Average Rating:", highest_avg_rating_price_range)
-
-
-# Define colors for each price range
-price_range_colors = Rating color
-print(price_range_colors)
-    # Add more price ranges and their corresponding colors if needed
-
-# Find the color corresponding to the price range with the highest average rating
-highest_avg_rating_color = price_range_colors[highest_avg_rating_price_range]
-print("Color representing the highest average rating:", highest_avg_rating_color)
-
-
-# Optional: Visualize the average ratings with colors
-plt.figure(figsize=(10, 6))
-sns.barplot(x=average_ratings.index, y=average_ratings.values, palette=[price_range_colors[pr] for pr in average_ratings.index])
-plt.title('Average Ratings by Price Range')
-plt.xlabel('Price Range')
-plt.ylabel('Average Rating')
-plt.show()
-"""
